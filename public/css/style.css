@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background: rgb(52, 87, 213);
+    display:flex;  
+}
+
+#sidebar {
+    background: #1a1a1a;
+    min-width: 10%;
+    max-width: 30%;
+    align-items: stretch;
+    padding: 10px;
+    word-wrap: break-word;
+    overflow-y: scroll;
+}
+
+#main {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+    max-height: 100vh;
+}
+
+#messages {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: white;
+    overflow-y: scroll
+}
+
+#controlls {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    margin-top:auto
+}
+
+#controlls input {
+    width: 100%;
+    padding: 10px 
+
+}
+
+#controlls button {
+    padding: 10px 20px;
+    background: rgb(52, 87, 213);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#user-list {
+    list-style-type: none;
+}
+
+#user-list li{
+    color: white;
+    padding: 5px;
+}
+
+#room-name {
+    color:white;
+    padding-bottom: 10px;
+    border-bottom: solid 1px white
+}
+
+.error {
+    color:red
+}
+
+#login {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    background: #1a1a1a;
+    padding: 25px 15px;
+    color: white;
+    box-shadow: 1px 1px 20px black
+}
+
+#login h1 {
+    margin-bottom: 20px;
+    font-size: 38px;
+}
+
+#login input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border:none
+}
+
+#login button {
+    background: rgb(52, 87, 213);
+    border: none;
+    color: white;
+    font-size: 18px
+}

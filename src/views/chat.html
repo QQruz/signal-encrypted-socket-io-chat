@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="sidebar">
+        <h3 id="room-name"></h3>
+        <ul id="user-list"></ul>
+    </div>
+    <div id="main">
+        <div id="messages">
+
+        </div>
+        <div id="controlls">
+            <input id="message">
+            <button>Submit</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/libsignal-protocol.js"></script>
+    <script src="/js/InMemorySignalProtocolStore.js"></script>
+    <script src="/js/client.js"></script>
+</body>
+</html>
